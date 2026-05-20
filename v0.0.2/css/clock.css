@@ -4,33 +4,43 @@ input{
 }
 
 .clock{
-    border:6pt solid black;
+    background-color: rgb(37, 37, 37);
+    border:6pt solid rgb(61, 61, 61);
     border-radius: 50pt;
     display:flex;
-    flex-direction:row;
     justify-content:center;
-    width:100%;
+    align-items:center;
 }
 
 .clock h1{
-    font-size: clamp(3rem, 17vw, 700px);
+    text-align: center;
+    color:#dd1212;
+    text-shadow: 0 0 20px #dd1212;
+    animation: flicker 1.5s infinite alternate;
+    cursor:pointer;
+    
+
+}
+
+.edit{
+    font-size: clamp(3rem, 10vw, 500px);
+}
+
+.display{
+    font-size: clamp(3rem, 20vw, 1000px);
 }
 
 .clockControls{
-
-    width:15%;
-    margin-left:20px;
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
+    margin:0 2rem 0 2rem;
+    display:grid;
+    place-items:center;
 
     
 }
 .clockControls button{
-    max-height:100px;
-    margin: 10px 0;
-    width:100%;
     font-size: clamp(1rem, 2rem, 20pt);
+    margin:10px 0 ;
+    width:100%;
 
 }
 
