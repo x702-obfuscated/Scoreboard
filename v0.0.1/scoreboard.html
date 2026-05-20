@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scoreboard</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/clock.css">
+    <link rel="stylesheet" href="styles/scoreboard.css">
+
+</head>
+<body>
+    <div class="clock-section flex-container flex-col">
+        <div class="clock" id="clock" onclick="editClock()">00:00</div>
+        <input id="clockInput">
+        <!-- <div class="clock-controls-container flex-container">
+            <button class="clock-button" id="startClock" onclick="startClock()">Start</button>
+            <button class="clock-button" id="pauseClock" onclick="pauseClock()">Pause</button>
+            <button class="clock-button" id="resetClock" onclick="resetClock()">Reset</button>
+
+        </div> -->
+
+    </div>
+
+    <div class="teams-section">
+
+        <div class="teams-row flex-container" >
+            <div class = "team blue" id="blueTeam">
+                <h2 class="team-name">Blue Team</h2>
+                <div class="score">0</div>
+                <!-- <div class="flex-container">
+                    <button class="addScore" onclick="addScore(this)">+1</button>
+                    <button class="subScore" onclick="subScore(this)">-1</button>
+                </div> 
+                <button class = "resetScore" onclick="resetScore(this)">Reset</button>  -->
+            </div>
+
+            <div class = "team red" id="redTeam">
+                <h2 class="team-name">Red Team</h2>
+                <div class="score">0</div>
+                <!-- <div class="flex-container">
+                    <button class="addScore" onclick="addScore(this)">+1</button>
+                    <button class="subScore" onclick="subScore(this)">-1</button>
+                </div>
+                <button class = "resetScore" onclick="resetScore(this)">Reset</button> -->
+            </div>
+        </div>
+
+        <div class="teams-row flex-container" style="display:none;">
+            <div class = "team green" id="greenTeam">
+                <h2 class="team-name">Green Team</h2>
+                <div class="score">0</div>
+                <div class="flex-container">
+                    <button class="addScore" onclick="addScore(this)">+1</button>
+                    <button class="subScore" onclick="subScore(this)">-1</button>
+                </div>
+                <button class = "resetScore" onclick="resetScore(this)">Reset</button>
+            </div>
+
+            <div class = "team purple" id="purpleTeam">
+                <h2 class="team-name">Purple Team</h2>
+                <div class="score">0</div>
+                <div class="flex-container">
+                    <button class="addScore" onclick="addScore(this)">+1</button>
+                    <button class="subScore" onclick="subScore(this)">-1</button>
+                </div>
+                <button class = "resetScore" onclick="resetScore(this)">Reset</button>
+            </div>
+        </div>
+
+ 
+
+
+    </div>
+
+
+    <script src="script/clock.js"></script>
+    <script src="script/scoreboard.js"></script>
+
+</body>
+</html>

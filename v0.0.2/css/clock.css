@@ -1,0 +1,39 @@
+
+input{
+    display:none;
+}
+
+.clock{
+    border:6pt solid black;
+    border-radius: 50pt;
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    width:100%;
+}
+
+.clock h1{
+    font-size: clamp(3rem, 17vw, 700px);
+}
+
+.clockControls{
+
+    width:15%;
+    margin-left:20px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+
+    
+}
+.clockControls button{
+    max-height:100px;
+    margin: 10px 0;
+    width:100%;
+    font-size: clamp(1rem, 2rem, 20pt);
+
+}
+
+.clockControls .pauseButton{
+    display:none;
+}

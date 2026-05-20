@@ -1,0 +1,7 @@
+
+.title-section{
+    background-color:orange;
+    font-size: clamp(1.5rem, 4vh, 3rem);
+    text-align:center;
+
+}

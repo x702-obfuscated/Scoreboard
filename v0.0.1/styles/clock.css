@@ -1,0 +1,86 @@
+
+.clock-section{
+    border:10pt solid black;
+    border-radius:50px;
+    margin-bottom: 10px;
+    padding:10px;
+    background-color: #141414;
+
+}
+
+.clock{
+    margin:none;
+
+}
+
+.clock-controls-container{
+    margin:none;
+}
+
+.clock-button{
+    margin: 0.5em;
+    padding: 0.9em 1.6em;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 0.7em;
+    cursor: pointer;
+
+    flex: 1;
+    min-width: 100px;
+    max-width:220px;
+
+    background: linear-gradient(145deg, #4b4b4b, #1c1c1c);
+    color: white;
+
+
+    transition: transform 0.15s ease, box-shadow 0.15s ease, filter 0.15s ease;
+
+    box-shadow: 0 6px 0 #000, 0 14px 25px rgba(40, 213, 219, 0.5);
+}
+
+.clock-button:hover{
+    transform: translateY(-3px);
+    filter: brightness(1.15);
+    box-shadow: 0 9px 0 #000, 0 14px 25px rgba(230, 56, 56, 0.5);
+}
+
+.clock-button:active{
+    transform: translateY(3px);
+    filter: brightness(0.95);
+    box-shadow: 0 2px 0 #000, 0 5px 10px rgba(0,0,0,0.4);
+}
+
+
+
+
+
+#clock{
+    text-align:center;
+    font-size: clamp(3rem, 15vw, 500px);
+    color:#dd1212;
+    text-shadow: 0 0 20px #dd1212;
+    animation: flicker 1.5s infinite alternate;
+    cursor:pointer;
+}
+
+#clockInput{
+    display:none;
+    font-size: clamp(3rem, 15vw, 500px);
+    text-align: center;
+    background: transparent;
+    border: none;
+    color: inherit;
+    outline: none;
+    width: 100%;
+}
+
+#pauseClock{
+    display:none;
+}
+
+@keyframes flicker {
+    0% {opacity:1;}
+    50% {opacity: 0.85;}
+    100% {opacity:1;}
+}
+

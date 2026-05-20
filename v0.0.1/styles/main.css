@@ -1,0 +1,41 @@
+body{
+    margin:0;
+    padding:10px;
+    border:none;
+    height:100vh;
+    background-color: rgb(29, 29, 29);
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+
+.flex-container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-row{
+    flex-direction:row;
+}
+
+.flex-col{
+    flex-direction: column;
+}
+
+.blue{
+    background-color: #007bff;
+}
+
+.red{
+    background-color: #dc3545;
+}
+
+.green{
+    background-color: #28a745;
+}
+
+.purple{
+    background-color: purple;
+}
