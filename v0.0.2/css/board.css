@@ -4,3 +4,43 @@ header{
     padding:10px;
     border-bottom: 2pt solid rgb(0, 255, 255);
 }
+
+
+.teams-container {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(0, 1fr);
+    gap: 1rem;
+    /* flex: 1; */
+    min-height: 0;
+}
+
+.teams-display{
+    flex:1;
+}
+
+.teams-control{
+    min-height:20vh;
+}
+
+.team-panel{
+    text-align: center;
+    color:black;
+}
+
+#team1{
+    background-color: blue;
+}
+
+#team2{
+    background-color: red;
+}
+
+#team3{
+    background-color: green;
+}
+
+#team4{
+    background-color: yellow;
+}

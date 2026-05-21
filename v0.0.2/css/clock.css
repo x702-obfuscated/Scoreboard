@@ -4,9 +4,16 @@ input{
 }
 
 .clock{
-    background-color: rgb(37, 37, 37);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.clockBorder{
+    padding:0 8vw;
+    background-color: rgb(18, 18, 18);
     border:6pt solid rgb(61, 61, 61);
-    border-radius: 50pt;
+    border-radius: 20pt;
     display:flex;
     justify-content:center;
     align-items:center;
@@ -38,7 +45,6 @@ input{
     
 }
 .clockControls button{
-    font-size: clamp(1rem, 2rem, 20pt);
     margin:10px 0 ;
     width:100%;
 

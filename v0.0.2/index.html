@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="./css/navmenu.css">
         <link rel="stylesheet" href="./css/buttons.css">
         <link rel="stylesheet" href="./css/clock.css">
+        <link rel="stylesheet" href="./css/board.css">
     </head>
     <body>
         <nav>
@@ -22,16 +23,23 @@
         </nav>
         <main>
             <section class="clock">
-                <h1 class="edit">00:00</h1>
-                <input class="clockInput">
-                <div class="clockControls">
-                    <button class="startButton">Start</button>
-                    <button class="pauseButton">Pause</button>
-                    <button class="resetButton">Reset</button>
+                <div class="clockBorder">
+                    <h1 class="edit">00:00</h1>
+                    <input class="clockInput">
+                    <div class="clockControls">
+                        <button class="startButton">Start</button>
+                        <button class="pauseButton">Pause</button>
+                        <button class="resetButton">Reset</button>
+                    </div>
                 </div>
 
             </section>
-            <secton class="scoreboard">
+            <secton class="teams-container teams-control">
+
+                <div class="team-panel" id="team1">Team 1</div>
+                <div class="team-panel" id="team2">Team 2</div>
+                <div class="team-panel" id="team3">Team 3</div>
+                <div class="team-panel" id="team4">Team 4</div>
 
 
             </secton>
