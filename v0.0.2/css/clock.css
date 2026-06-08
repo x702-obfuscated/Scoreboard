@@ -29,6 +29,18 @@ input{
 
 }
 
+#clockInput{
+    display:none;
+    font-size: clamp(3rem, 10vw, 500px);
+    text-align: center;
+    background: transparent;
+    border: none;
+    color: inherit;
+    outline: none;
+    width:100%;
+
+}
+
 .edit{
     font-size: clamp(3rem, 10vw, 500px);
 }

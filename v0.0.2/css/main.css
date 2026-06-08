@@ -3,7 +3,6 @@
     border:0;
     padding:0;
     font-family: Arial, Helvetica, sans-serif;
-    color:white;
 }   
 
 body{
@@ -11,6 +10,7 @@ body{
     height:100vh;
     display:flex;
     flex-direction:column;
+    color:white;
 }
 
 main{

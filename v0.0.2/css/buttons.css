@@ -7,7 +7,7 @@ button{
     border-radius: 0.7em;
     cursor: pointer;
     flex: 1;
-    background: linear-gradient(145deg, #4b4b4b, #1c1c1c);
+    background: #222222;
     color: white;
     transition: transform 0.15s ease, box-shadow 0.15s ease, filter 0.15s ease;
     /* box-shadow: 0 6px 0 #000, 0 14px 25px rgba(40, 213, 219, 0.5); */

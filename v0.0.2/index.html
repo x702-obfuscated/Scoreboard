@@ -24,22 +24,22 @@
         <main>
             <section class="clock">
                 <div class="clockBorder">
-                    <h1 class="edit">00:00</h1>
-                    <input class="clockInput">
+                    <h1 class="edit" id="clockTime" onclick="editClock()">00:00</h1>
+                    <input id="clockInput">
                     <div class="clockControls">
-                        <button class="startButton">Start</button>
-                        <button class="pauseButton">Pause</button>
-                        <button class="resetButton">Reset</button>
+                        <button class="startButton" id="startClock" onclick="startClock()">Start</button>
+                        <button class="pauseButton" id="pauseClock" onclick="pauseClock()">Pause</button>
+                        <button class="resetButton" onclick="resetClock()">Reset</button>
                     </div>
                 </div>
 
             </section>
             <secton class="teams-container teams-control">
 
-                <div class="team-panel" id="team1">Team 1</div>
+                <!-- <div class="team-panel" id="team1">Team 1</div>
                 <div class="team-panel" id="team2">Team 2</div>
                 <div class="team-panel" id="team3">Team 3</div>
-                <div class="team-panel" id="team4">Team 4</div>
+                <div class="team-panel" id="team4">Team 4</div> -->
 
 
             </secton>
@@ -47,6 +47,8 @@
         </main>
 
         <script src="./js/clock.js"></script>
+        <script src="./js/board.js"></script>
+        <script src="./js/controls.js"></script>
         
     </body>
 </html>

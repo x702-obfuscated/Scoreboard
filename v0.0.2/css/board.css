@@ -22,25 +22,42 @@ header{
 
 .teams-control{
     min-height:20vh;
+
 }
 
-.team-panel{
+.teamPanel{
+    padding: 20px 0;
+    font-size: clamp(0.5rem,2.5rem,36pt);
     text-align: center;
+    color:black;
+    border-radius:10pt;
+}
+
+.teamPanel h1{
+    font-size: clamp(2rem, 8vw, 99pt);
+}
+
+.teamPanel button{
+    min-width: 125px;
+    margin: 0 20px ;
+    font-weight: bold;
+    border:2pt solid black;
+}
+
+
+.plus:hover{
+    background-color: #00ff00;
     color:black;
 }
 
-#team1{
-    background-color: blue;
+.minus:hover{
+    background-color: #ff2828;
+    color:black;
 }
 
-#team2{
-    background-color: red;
+.reset:hover{
+    background-color:orange;
+    color:black;
+    font-weight: bold;
 }
 
-#team3{
-    background-color: green;
-}
-
-#team4{
-    background-color: yellow;
-}
